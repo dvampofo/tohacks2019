@@ -1,10 +1,13 @@
-#! usr/bin/env python3
-# -*- coding: utf-8 -*-
+from flask import Flask, request, jsonify
 
-import flask
+app = Flask(__name__)
 
-def main():
-    pass
+@app.route('/upload', methods=['POST'])
+def upload():
+    if 'file' in request.files:
+        file = request.files['file']
+        print(file)
+        return "Success"
 
-if __name__=="__main__":
-    main()
+if __name__ == '__main__':
+    app.run()
