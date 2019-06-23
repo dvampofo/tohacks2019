@@ -40,9 +40,8 @@ def test():
 def upload():
     if 'file' in request.files:
         file = request.files['file']
-        # print(file)
         # analyze(file)
-        return "Success"
+        return "File succesfully uploaded!"
 
 if __name__ == '__main__':
     app.run()

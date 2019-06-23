@@ -6,3 +6,6 @@
 
 #Ignore virtualenv dir
 tohacks/
+
+#Ignore VSCode files
+.vscode/
