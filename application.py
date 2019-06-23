@@ -1,7 +1,11 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 from CalculateCost import analyse_cost
 
 app = Flask(__name__)
+
+@app.route('/')
+def main():
+    return render_template('index.html')
 
 @app.route('/test', methods=['POST'])
 def test():
