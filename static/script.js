@@ -59,7 +59,7 @@ $(function() {
 function uploadData(formdata){
 
     $.ajax({
-        url: "https://tohacks2019-presto-api.azurewebsites.net/upload",
+        url: "https://tohacks2019-presto-api.azurewebsites.net/upload-file",
         type: 'post',
         data: formdata,
         contentType: false,
