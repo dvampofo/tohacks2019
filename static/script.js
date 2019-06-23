@@ -67,8 +67,12 @@ function uploadData(formdata){
         dataType: 'json',
         success: function(response){
             console.log(response);
+            location.href = "summary.html";
         }
     });
+
+    var data = JSON.parse(this.response);
+    
 };
 
 
