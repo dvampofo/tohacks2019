@@ -32,11 +32,11 @@ def analyse_cost(csv_file):
             print(curr_datetime, location)
 
     total_cost = unique_trips * TTC_ADULT_FARE
-    price_difference = total_cost - TTC_ADULT_MONTHLY_PASS_COST
+    price_difference = round(total_cost - TTC_ADULT_MONTHLY_PASS_COST, 2)
 
     print("Unique trips", unique_trips)
     print("Total cost", total_cost)
-    print("Price differecne", price_difference)
+    print("Price difference", price_difference)
 
     return jsonify({"unique_trips":unique_trips, "total_cost":total_cost, "price_differnce":price_difference})
 
