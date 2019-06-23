@@ -1,6 +1,7 @@
 .container{
     width: 50%;
     margin: 0 auto;
+    margin-top: 150px;
 }
 
 .upload-area{
@@ -30,17 +31,6 @@
     display: none;
 }
 
-/* Thumbnail */
-.thumbnail{
-    width: 80px;
-    height: 80px;
-    padding: 2px;
-    border: 2px solid lightgray;
-    border-radius: 3px;
-    float: left;
-    margin: 5px;
-}
-
 .size{
     font-size:12px;
 }
@@ -48,4 +38,52 @@
 #instruction{
     color: #e0e0eb;
     padding-top: 20px;
+}
+
+#about_img{
+    opacity: 0.5;
+}
+
+#cite{
+    text-align: center;
+}
+
+.introduction{
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 10em;
+    font-size: 20px;
+    line-height: 200%;
+
+}
+
+.name_card{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 250px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer1 {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
 }

@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from flask import jsonify
+import json
 from constants import *
 import pandas as pd
 import datetime
@@ -46,7 +47,7 @@ def analyse_cost(csv_file):
     print("Price difference", price_difference)
     """
 
-    return jsonify({"unique_trips":unique_trips, "total_cost":total_cost, "price_differnce":price_difference, "unique_locations":unique_locations})
+    return json.dumps({"unique_trips":unique_trips, "total_cost":total_cost, "price_differnce":price_difference, "unique_locations":unique_locations})
 
 
 def setup_file(csv_file):
