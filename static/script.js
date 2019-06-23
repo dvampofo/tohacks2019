@@ -59,41 +59,14 @@ $(function() {
 function uploadData(formdata){
 
     $.ajax({
-        url: 'dragdrop/upload.php',
+        url: '/upload',
         type: 'post',
         data: formdata,
         contentType: false,
         processData: false,
         dataType: 'json',
         success: function(response){
-            addThumbnail(response);
+            
         }
     });
-}
-
-// Added thumbnail
-function addThumbnail(data){
-    $("#uploadfile h1").remove();
-    var len = $("#uploadfile div.thumbnail").length;
-
-    var num = Number(len);
-    num = num + 1;
-
-    var name = data.name;
-    var size = convertSize(data.size);
-    var src = data.src;
-
-    // Creating an thumbnail
-    $("#uploadfile").append('<div id="thumbnail_'+num+'" class="thumbnail"></div>');
-    $("#thumbnail_"+num).append('<img src="'+src+'" width="100%" height="78%">');
-    $("#thumbnail_"+num).append('<span class="size">'+size+'<span>');
-
-}
-
-// Bytes conversion
-function convertSize(size) {
-    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-    if (size == 0) return '0 Byte';
-    var i = parseInt(Math.floor(Math.log(size) / Math.log(1024)));
-    return Math.round(size / Math.pow(1024, i), 2) + ' ' + sizes[i];
-}
+};
