@@ -59,14 +59,16 @@ $(function() {
 function uploadData(formdata){
 
     $.ajax({
-        url: '/upload',
+        url: "https://tohacks2019-presto-api.azurewebsites.net/upload",
         type: 'post',
         data: formdata,
         contentType: false,
         processData: false,
         dataType: 'json',
         success: function(response){
-            
+            console.log(response);
         }
     });
 };
+
+
