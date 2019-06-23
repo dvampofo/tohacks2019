@@ -28,7 +28,7 @@ def upload():
 @app.route('/summary')
 def get_summary():
     result = request.args['result']
-    return render_template('summary.html', result=json.loads(result))
+    return render_template('summary.html', result=result)
 
 
 if __name__ == '__main__':
