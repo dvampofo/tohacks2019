@@ -38,3 +38,33 @@
     color: #e0e0eb;
     padding-top: 20px;
 }
+
+#about_img{
+    opacity: 0.5;
+}
+
+#cite{
+    text-align: center;
+}
+
+.introduction{
+    text-align: center;
+    margin-left: 10em;
+    margin-right: 10em;
+    font-size: 20px;
+    line-height: 200%;
+
+}
+
+.name_card{
+    margin-top: 200px;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
