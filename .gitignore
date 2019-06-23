@@ -2,5 +2,10 @@
 *.pyc
 
 #Ignore vim files
-
 *.swp
+
+#Ignore virtualenv dir
+tohacks/
+
+#Ignore VSCode files
+.vscode/
