@@ -16,6 +16,12 @@ def main():
 def test():
     return "Sucess Azure deployment"
 
+@app.route('/upload-file', methods=['POST'])
+def upload_file():
+    if 'file' in request.files:
+        file = request.files['file']
+        result = analyse_cost(file)
+        return result
 
 @app.route('/upload', methods=['POST'])
 def upload():
