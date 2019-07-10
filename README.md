@@ -1,6 +1,6 @@
 # Pres.TO - A simple transit cost spending tracking application
 
-![]()
+![Team photo](https://github.com/dvampofo/tohacks2019/blob/master/images/tohacks2019_team.png?raw=true)
 
 ## ABOUT
 
